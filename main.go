@@ -34,7 +34,7 @@ func NewMyComponent(ctx *pulumi.Context, name string, opts ...pulumi.ResourceOpt
 		Bucket:  bucket.ID(),
 		Content: pulumi.String("hello"),
 		Key:     pulumi.String("index.html"),
-	})
+	}, pulumi.Parent(bucket))
 	if err != nil {
 		return nil, err
 	}
