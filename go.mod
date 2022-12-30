@@ -1,4 +1,4 @@
-module pulumi-playground-lib
+module github.com/Nerja/pulumi-playground-lib
 
 go 1.17
 
